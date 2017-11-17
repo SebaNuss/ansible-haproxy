@@ -63,18 +63,6 @@ empty: true
 #    expect:
 #    send_state:
 #
-#haproxy_resolvers:
-#  - name:
-#    nameservers:
-#      - name:
-#        ip:
-#        port:
-#    hold:
-#      - status:
-#        period:
-#    resolve_retries:
-#    timeout_retry:
-#
 #haproxy_frontends:
 #  - name:
 #    ip:
@@ -107,6 +95,7 @@ empty: true
 #        -
 #    options:
 #        - forwardfor
+#    capture_cookie:
 #    default_backend:
 #    use_backend:
 #      - name:
@@ -158,6 +147,7 @@ empty: true
 #    timeout:
 #      - param:
 #        value:
+#    stick-table:
 #    appsession: 'JSESSIONID len 52 timeout 3h'
 #    errorfile:
 #      - code:
@@ -185,7 +175,6 @@ empty: true
 #      ciphers: 'RC4-SHA:AES128-SHA:AES:!ADH:!aNULL:!DH:!EDH:!eNULL'
 #    disabled:
 #    description:
-#    maxconn:
 #    balance:
 #    cookie:
 #    log:

@@ -20,8 +20,8 @@ haproxy_global:
       facility: local1
       level: notice
   chroot: /var/lib/haproxy
-  user: haproxy
-  group: haproxy
+  user: root
+  group: root
   daemon: true
   ssl_default_bind_options: '{{ _haproxy_ssl_options }}'
   ssl_default_bind_ciphers: '{{ _haproxy_ssl_ciphers }}'
@@ -67,7 +67,6 @@ haproxy_defaults:
       - code: 504
         file: /etc/haproxy/errors/504.http
 
-haproxy_resolvers: []
 haproxy_backends: []
 haproxy_frontends: []
 haproxy_listen: []

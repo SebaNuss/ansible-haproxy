@@ -26,9 +26,6 @@ Role Variables
 * `haproxy_defaults`
 
     Default settings for frontends, backends, and listen proxies.
-* `haproxy_resolvers`
-
-    A list of HAProxy resolvers.
 * `haproxy_backends`
 
     A list of HAProxy backends.
